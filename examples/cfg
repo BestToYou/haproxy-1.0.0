@@ -1,0 +1,10 @@
+listen http_proxy 0.0.0.0:3127
+  mode    http
+  dispatch 127.0.0.1:5000
+  contimeout  3000
+  clitimeout  150000
+  srvtimeout  150000
+  maxconn 60000
+  redisp
+  retries 3
+  grace 3000
